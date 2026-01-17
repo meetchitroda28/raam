@@ -1,0 +1,15 @@
+{% load static %}
+
+<link href="{% static 'css/a.css' %}" rel="stylesheet" />
+
+{% for i in data %}
+<h1>
+    {{i}}
+</h1>
+{% endfor %}
+
+<a href="home">
+    Home
+</a>
+
+<img src="{% static 'img/152523.jpg'%}"/>

@@ -1,0 +1,29 @@
+
+<h1>
+    Admin Home
+</h1>
+
+{% for i in data %}
+
+<div>
+    <h1>
+        {{i.name}}
+    </h1>
+    <h4>
+        {{i.number}}
+    </h4>
+</div>
+
+{% endfor %}
+
+{% comment %} <a href="/admin/about">
+    Admin About
+</a> {% endcomment %}
+
+<a href="{% url 'adminabout' %}">
+    Admin About
+</a>
+
+<a href="{% url 'raam' %}">
+   Form
+</a>
